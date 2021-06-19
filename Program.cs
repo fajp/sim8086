@@ -262,17 +262,17 @@ namespace emu8086
                     {
                         if (Input[2].Equals("ax", StringComparison.OrdinalIgnoreCase))
                         {
-                            ax = bx;
+                            bx = bx;
                             Console.WriteLine();
                         }
                         else if (Input[2].Equals("cx", StringComparison.OrdinalIgnoreCase))
                         {
-                            ax = cx;
+                            bx = cx;
                             Console.WriteLine();
                         }
                         else if (Input[2].Equals("dx", StringComparison.OrdinalIgnoreCase))
                         {
-                            ax = dx;
+                            bx = dx;
                             Console.WriteLine();
                         }
                         else
