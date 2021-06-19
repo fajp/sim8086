@@ -142,6 +142,7 @@ namespace emu8086
         static void Main(string[] args)
         {
             Console.WriteLine("Symulator Intel 8086\n" +
+            "Autor: Filip Piechnik, nr albumu: 12895\n\n" +
             "Aby wyświetlić dostępne komendy wpisz 'h'\n" +
             "Aby zakończyć działanie programu wpisz 'q'\n");
 
