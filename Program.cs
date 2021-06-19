@@ -380,7 +380,271 @@ namespace emu8086
                             Mov(ref ax, dx, "ll");
                             Console.WriteLine();
                         }
+                        else
+                        {
+                            Console.WriteLine("Nieprawidłowy rejestr!");
+                            Console.WriteLine();
+                        }
                     }
+                    else if (Input[1].Equals("bh", StringComparison.OrdinalIgnoreCase)) //Dla rejestru BH
+                    {
+                        if (Input[2].Equals("bl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, bx, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ah", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, ax, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("al", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, ax, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ch", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, cx, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("cl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, cx, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("dh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, dx, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("dl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, dx, "hl");
+                            Console.WriteLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Nieprawidłowy rejestr!");
+                            Console.WriteLine();
+                        }
+                    }
+                    else if (Input[1].Equals("bl", StringComparison.OrdinalIgnoreCase)) //Dla rejestru BL
+                    {
+                        if (Input[2].Equals("bh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, bx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ah", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, ax, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("al", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, ax, "ll");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ch", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, cx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("cl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, cx, "ll");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("dh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, dx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("dl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref bx, dx, "ll");
+                            Console.WriteLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Nieprawidłowy rejestr!");
+                            Console.WriteLine();
+                        }
+                    }
+                    else if (Input[1].Equals("ch", StringComparison.OrdinalIgnoreCase)) //Dla rejestru CH
+                    {
+                        if (Input[2].Equals("cl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, cx, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ah", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, ax, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("al", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, ax, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("bh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, bx, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("bl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, bx, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("dh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, dx, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("dl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, dx, "hl");
+                            Console.WriteLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Nieprawidłowy rejestr!");
+                            Console.WriteLine();
+                        }
+                    }
+                    else if (Input[1].Equals("cl", StringComparison.OrdinalIgnoreCase)) //Dla rejestru CL
+                    {
+                        if (Input[2].Equals("ch", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, cx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ah", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, ax, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("al", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, ax, "ll");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("bh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, bx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("bl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, bx, "ll");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("dh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, dx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("dl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref cx, dx, "ll");
+                            Console.WriteLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Nieprawidłowy rejestr!");
+                            Console.WriteLine();
+                        }
+                    }
+                    else if (Input[1].Equals("dh", StringComparison.OrdinalIgnoreCase)) //Dla rejestru DH
+                    {
+                        if (Input[2].Equals("dl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, dx, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ah", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, ax, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("al", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, ax, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("bh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, bx, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("bl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, bx, "hl");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ch", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, cx, "hh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("cl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, cx, "hl");
+                            Console.WriteLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Nieprawidłowy rejestr!");
+                            Console.WriteLine();
+                        }
+                    }
+                    else if (Input[1].Equals("dl", StringComparison.OrdinalIgnoreCase)) //Dla rejestru DL
+                    {
+                        if (Input[2].Equals("dh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, dx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ah", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, ax, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("al", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, ax, "ll");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("bh", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, bx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("bl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, bx, "ll");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("ch", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, cx, "lh");
+                            Console.WriteLine();
+                        }
+                        else if (Input[2].Equals("cl", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Mov(ref dx, cx, "ll");
+                            Console.WriteLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Nieprawidłowy rejestr!");
+                            Console.WriteLine();
+                        }
+                    }
+
                 }
                 else if (input.Equals("q", StringComparison.OrdinalIgnoreCase) == false) //Nieznana komenda
                 {
